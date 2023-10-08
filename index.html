@@ -1,260 +1,398 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="/src/css/style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/src/css/style.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Header -->
     <header>
-        <div class="header-container">
-            <div class="header-top">
-                <div class="header-top-container">
-                    <div class="header-left">
-                        <img class="logo" src="src/img/logo.svg" alt="logo-image">
-                    </div>
-                    <div class="header-right">
-                        <div class="search">
-                            <div>
-                                <form class="header-search" action="#">
-                                    <select class="form-element">
-                                        <option>All Categories</option>
-                                        <option>Milks and Dairies</option>
-                                        <option>Wines &amp; Alcohol</option>
-                                        <option>Clothing &amp; Beauty</option>
-                                        <option>Pet Foods &amp; Toy</option>
-                                        <option>Fast food</option>
-                                        <option>Baking material</option>
-                                        <option>Vegetables</option>
-                                        <option>Fresh Seafood</option>
-                                        <option>Noodles &amp; Rice</option>
-                                        <option>Ice cream</option>
-                                    </select>
-                                    <input class="search-input" type="text" placeholder="Search for items...">
-                                </form>
-                            </div>
-                        </div>
-                        <div class="header-elements">
-                            <div class="title-icon">
-                                <a class="icon-count" href="shop-compare.html">
-                                    <img class="svg-icon" alt="Nest" src="src/img/icon-compare.svg">
-                                    <span class="count">3</span>
-                                </a>
-                                <a href="shop-compare.html"><span class="text">Compare</span></a>
-                            </div>
-                            <div class="title-icon">
-                                <a href="shop-wishlist.html">
-                                    <img class="svg-icon" alt="Nest" src="src/img/icon-heart.svg">
-                                    <span class="count">6</span>
-                                </a>
-                                <a href="shop-wishlist.html"><span class="text">Wishlist</span></a>
-                            </div>
-                            <div class="title-icon">
-                                <a href="shop-cart.html">
-                                    <img class="svg-icon" alt="Nest" src="/src/img/icon-cart.svg">
-                                    <span class="count">2</span>
-                                </a>
-                                <a href="shop-cart.html"><span class="text">Cart</span></a>
-                            </div>
-                            <div class="title-icon">
-                                <a href="page-account.html">
-                                    <img class="svg-icon" alt="Nest" src="src/img/icon-user.svg">
-                                </a>
-                                <a href="page-account.html"><span class="text">Account</span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+      <div class="header-container">
+        <div class="header-top">
+          <div class="header-top-container">
+            <div class="header-left">
+              <img class="logo" src="src/img/logo.svg" alt="logo-image" />
             </div>
-            <div class="header-bottom">
-                <div class="header-bottom-container">
-                    <div class="btn-link">
-                        <a class="btn" href="#">
-                            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path
-                                        d="M2.5 6.5C2.5 8.70914 4.29086 10.5 6.5 10.5H9.16667C9.47666 10.5 9.63165 10.5 9.75882 10.4659C10.1039 10.3735 10.3735 10.1039 10.4659 9.75882C10.5 9.63165 10.5 9.47666 10.5 9.16667V6.5C10.5 4.29086 8.70914 2.5 6.5 2.5"
-                                        stroke="#ffff" stroke-width="1.5" stroke-linecap="round"></path>
-                                    <path
-                                        d="M17.5 21.5C15.2909 21.5 13.5 19.7091 13.5 17.5V14.8333C13.5 14.5233 13.5 14.3683 13.5341 14.2412C13.6265 13.8961 13.8961 13.6265 14.2412 13.5341C14.3683 13.5 14.5233 13.5 14.8333 13.5H17.5C19.7091 13.5 21.5 15.2909 21.5 17.5"
-                                        stroke="#ffff" stroke-width="1.5" stroke-linecap="round"></path>
-                                    <path
-                                        d="M2.5 17.5C2.5 15.2909 4.29086 13.5 6.5 13.5H8.9C9.46005 13.5 9.74008 13.5 9.95399 13.609C10.1422 13.7049 10.2951 13.8578 10.391 14.046C10.5 14.2599 10.5 14.5399 10.5 15.1V17.5C10.5 19.7091 8.70914 21.5 6.5 21.5C4.29086 21.5 2.5 19.7091 2.5 17.5Z"
-                                        stroke="#ffff" stroke-width="1.5"></path>
-                                    <path
-                                        d="M13.5 6.5C13.5 4.29086 15.2909 2.5 17.5 2.5C19.7091 2.5 21.5 4.29086 21.5 6.5C21.5 8.70914 19.7091 10.5 17.5 10.5H14.6429C14.5102 10.5 14.4438 10.5 14.388 10.4937C13.9244 10.4415 13.5585 10.0756 13.5063 9.61196C13.5 9.55616 13.5 9.48982 13.5 9.35714V6.5Z"
-                                        stroke="#ffff" stroke-width="1.5"></path>
-                                </g>
-                            </svg>
-                            <span class="categories">Browse All Categories</span></a>
-                    </div>
-                    <nav>
-                        <ul class="navbar">
-                            <li class="navbar-element">
-                                <img class="navbar-icon" src="src/img/icon-hot.svg" alt="hot deals">
-                                <a class="link-element" href="shop-grid-right.html">Deals</a>
-                            </li>
-                            <li class="navbar-element">
-                                <a class="link-element" href="index.html">Home</a>
-                            </li>
-                            <li class="navbar-element">
-                                <a class="link-element" href="page-about.html">About</a>
-                            </li>
-                            <li class="navbar-element">
-                                <a class="link-element" href="shop-grid-right.html">Shop</a>
-                            </li>
-                            <li class="navbar-element">
-                                <a class="link-element" href="#">Vendors</a>
-                            </li>
-                            <li class="navbar-element">
-                                <a class="link-element" href="#">Mega menu</a>
-                            </li>
-                            <li class="navbar-element">
-                                <a class="link-element" href="blog-category-grid.html">Blog</a>
-                            </li>
-                            <li class="navbar-element">
-                                <a class="link-element" href="#">Pages</a>
-                            </li>
-                            <li class="navbar-element">
-                                <a class="link-element" href="page-contact.html">Contact</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <div class="support">
-                        <img class="support-icon" src="/src/img/icon-headphone.svg" alt="hotline">
-                        <p class="number">1900 - 888<span class="time">24/7 Support Center</span></p>
-                    </div>
+            <div class="header-right">
+              <div class="search">
+                <div>
+                  <form class="header-search" action="#">
+                    <select class="form-element">
+                      <option>All Categories</option>
+                      <option>Milks and Dairies</option>
+                      <option>Wines &amp; Alcohol</option>
+                      <option>Clothing &amp; Beauty</option>
+                      <option>Pet Foods &amp; Toy</option>
+                      <option>Fast food</option>
+                      <option>Baking material</option>
+                      <option>Vegetables</option>
+                      <option>Fresh Seafood</option>
+                      <option>Noodles &amp; Rice</option>
+                      <option>Ice cream</option>
+                    </select>
+                    <input
+                      class="search-input"
+                      type="text"
+                      placeholder="Search for items..."
+                    />
+                  </form>
                 </div>
+              </div>
+              <div class="header-elements">
+                <div class="title-icon">
+                  <a class="icon-count" href="shop-compare.html">
+                    <img
+                      class="svg-icon"
+                      alt="Nest"
+                      src="src/img/icon-compare.svg"
+                    />
+                    <span class="count">3</span>
+                  </a>
+                  <a href="shop-compare.html"
+                    ><span class="text">Compare</span></a
+                  >
+                </div>
+                <div class="title-icon">
+                  <a href="shop-wishlist.html">
+                    <img
+                      class="svg-icon"
+                      alt="Nest"
+                      src="src/img/icon-heart.svg"
+                    />
+                    <span class="count">6</span>
+                  </a>
+                  <a href="shop-wishlist.html"
+                    ><span class="text">Wishlist</span></a
+                  >
+                </div>
+                <div class="title-icon" id="cart-icon">
+                  <a href="#">
+                    <img
+                      class="svg-icon"
+                      alt="Nest"
+                      src="/src/img/icon-cart.svg"
+                    />
+                    <span class="count">2</span>
+                  </a>
+                  <a href="card.html"><span class="text">Cart</span></a>
+                </div>
+                <div class="title-icon" id="cart-icon">
+                  <a href="page-account.html">
+                    <img
+                      class="svg-icon"
+                      alt="Nest"
+                      src="src/img/icon-user.svg"
+                    />
+                  </a>
+                  <a href="page-account.html"
+                    ><span class="text">Account</span></a
+                  >
+                </div>
+              </div>
+              <div class="cart">
+                <h2 class="cart_title">Shopping Cart</h2>
+                <div class="cart_content">
+                  <div class="cart_box">
+                    <img
+                      src="/src/img/product-1-1.jpg"
+                      alt=""
+                      class="img_cart"
+                    />
+                    <div class="detail_box">
+                      <p class="cart_product_title">
+                        Seeds of Change Organic Quinoa, Brown, & Red Rice
+                      </p>
+                      <b class="cart_price">$25.04</b>
+                      <input type="number" value="1" class="cart_quantity" />
+                    </div>
+                    <i class="fa-regular fa-trash-can cart_remove"></i>
+                  </div>
+                </div>
+                <div class="total">
+                  <div class="total_title">Total</div>
+                  <div class="total_price">$0</div>
+                </div>
+                <button type="button" class="buy_btn">Buy Now</button>
+                <i class="fa-solid fa-xmark" id="cart_close"></i>
+              </div>
             </div>
+          </div>
         </div>
+        <div class="header-bottom">
+          <div class="header-bottom-container">
+            <div class="btn-link">
+              <a class="btn" href="#">
+                <svg
+                  class="btn-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></g>
+                  <g id="SVGRepo_iconCarrier">
+                    <path
+                      d="M2.5 6.5C2.5 8.70914 4.29086 10.5 6.5 10.5H9.16667C9.47666 10.5 9.63165 10.5 9.75882 10.4659C10.1039 10.3735 10.3735 10.1039 10.4659 9.75882C10.5 9.63165 10.5 9.47666 10.5 9.16667V6.5C10.5 4.29086 8.70914 2.5 6.5 2.5"
+                      stroke="#ffff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    ></path>
+                    <path
+                      d="M17.5 21.5C15.2909 21.5 13.5 19.7091 13.5 17.5V14.8333C13.5 14.5233 13.5 14.3683 13.5341 14.2412C13.6265 13.8961 13.8961 13.6265 14.2412 13.5341C14.3683 13.5 14.5233 13.5 14.8333 13.5H17.5C19.7091 13.5 21.5 15.2909 21.5 17.5"
+                      stroke="#ffff"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                    ></path>
+                    <path
+                      d="M2.5 17.5C2.5 15.2909 4.29086 13.5 6.5 13.5H8.9C9.46005 13.5 9.74008 13.5 9.95399 13.609C10.1422 13.7049 10.2951 13.8578 10.391 14.046C10.5 14.2599 10.5 14.5399 10.5 15.1V17.5C10.5 19.7091 8.70914 21.5 6.5 21.5C4.29086 21.5 2.5 19.7091 2.5 17.5Z"
+                      stroke="#ffff"
+                      stroke-width="1.5"
+                    ></path>
+                    <path
+                      d="M13.5 6.5C13.5 4.29086 15.2909 2.5 17.5 2.5C19.7091 2.5 21.5 4.29086 21.5 6.5C21.5 8.70914 19.7091 10.5 17.5 10.5H14.6429C14.5102 10.5 14.4438 10.5 14.388 10.4937C13.9244 10.4415 13.5585 10.0756 13.5063 9.61196C13.5 9.55616 13.5 9.48982 13.5 9.35714V6.5Z"
+                      stroke="#ffff"
+                      stroke-width="1.5"
+                    ></path>
+                  </g>
+                </svg>
+                <span class="categories">Browse All Categories</span></a
+              >
+            </div>
+            <nav>
+              <ul class="navbar">
+                <li class="navbar-element">
+                  <img
+                    class="navbar-icon"
+                    src="src/img/icon-hot.svg"
+                    alt="hot deals"
+                  />
+                  <a class="link-element" href="shop-grid-right.html">Deals</a>
+                </li>
+                <li class="navbar-element">
+                  <a class="link-element" href="index.html">Home</a>
+                </li>
+                <li class="navbar-element">
+                  <a class="link-element" href="page-about.html">About</a>
+                </li>
+                <li class="navbar-element">
+                  <a class="link-element" href="shop-grid-right.html">Shop</a>
+                </li>
+                <li class="navbar-element">
+                  <a class="link-element" href="#">Vendors</a>
+                </li>
+                <li class="navbar-element">
+                  <a class="link-element" href="#">Mega menu</a>
+                </li>
+                <li class="navbar-element">
+                  <a class="link-element" href="blog-category-grid.html"
+                    >Blog</a
+                  >
+                </li>
+                <li class="navbar-element">
+                  <a class="link-element" href="#">Pages</a>
+                </li>
+                <li class="navbar-element">
+                  <a class="link-element" href="page-contact.html">Contact</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="support">
+              <img
+                class="support-icon"
+                src="/src/img/icon-headphone.svg"
+                alt="hotline"
+              />
+              <p class="number">
+                1900 - 888<span class="time">24/7 Support Center</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </header>
     <!--Featured -->
     <section id="featured">
-        <div class="featured-container">
-            <div class="featured-top">
-                <div class="section-title">
-                    <div class="title">
-                        <h3 class="title-h">Featured Categories</h3>
-                        <ul class="list">
-                            <li class="list-element"><a class="nav-link" href="shop-grid-right.html">Cake &amp;
-                                    Milk</a></li>
-                            <li class="list-element"><a class="nav-link" href="shop-grid-right.html">Coffes
-                                    &amp; Teas</a></li>
-                            <li class="list-element"><a class="nav-link" href="shop-grid-right.html">Pet
-                                    Foods</a></li>
-                            <li class="list-element"><a class="nav-link" href="shop-grid-right.html">Vegetables</a></li>
-                        </ul>
-                    </div>
-
-                </div>
-                <div id="product-elements"></div>
+      <div class="featured-container">
+        <div class="featured-top">
+          <div class="section-title">
+            <div class="title">
+              <h3 class="title-h">Featured Categories</h3>
+              <ul class="list">
+                <li class="list-element">
+                  <a class="nav-link" href="shop-grid-right.html"
+                    >Cake &amp; Milk</a
+                  >
+                </li>
+                <li class="list-element">
+                  <a class="nav-link" href="shop-grid-right.html"
+                    >Coffes &amp; Teas</a
+                  >
+                </li>
+                <li class="list-element">
+                  <a class="nav-link" href="shop-grid-right.html">Pet Foods</a>
+                </li>
+                <li class="list-element">
+                  <a class="nav-link" href="shop-grid-right.html">Vegetables</a>
+                </li>
+              </ul>
             </div>
-            <div class="featured-bottom">
-                <div class="featured-bottom-container">
-                    <div class="featured-img">
-                        <img class="photo" src="src/img/banner-1.png" alt="photo">
-                        <div class="featured-text">
-                            <h4 class="featured-heading">
-                                Everyday Fresh &amp; <br>Clean with Our<br>
-                                Products
-                            </h4>
-                            <a href="shop-grid-right.html" class="featured-btn"><span>Shop Now</span>
-                                <svg class="featured-icon" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffff" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="featured-img">
-                        <img class="photo" src="src/img/banner-2.png" alt="photo">
-                        <div class="featured-text">
-                            <h4 class="featured-heading">
-                                Make your Breakfast <br>
-                                Healthy and Easy
-                            </h4>
-                            <a href="shop-grid-right.html" class="featured-btn"><span>Shop Now</span>
-                                <svg class="featured-icon" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffff" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="featured-img">
-                        <img class="photo" src="src/img/banner-3.png" alt="photo">
-                        <div class="featured-text">
-                            <h4 class="featured-heading">
-                                The best Organic <br>
-                                Products Online
-                            </h4>
-                            <a href="shop-grid-right.html" class="featured-btn"><span>Shop Now</span>
-                                <svg class="featured-icon" viewBox="0 0 24 24" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                    <g id="SVGRepo_iconCarrier">
-                                        <path d="M6 12H18M18 12L13 7M18 12L13 17" stroke="#ffff" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"></path>
-                                    </g>
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div id="product-elements"></div>
         </div>
+        <div class="featured-bottom">
+          <div class="featured-bottom-container">
+            <div class="featured-img">
+              <img class="photo" src="src/img/banner-1.png" alt="photo" />
+              <div class="featured-text">
+                <h4 class="featured-heading">
+                  Everyday Fresh &amp; <br />Clean with Our<br />
+                  Products
+                </h4>
+                <a href="shop-grid-right.html" class="featured-btn"
+                  ><span>Shop Now</span>
+                  <svg
+                    class="featured-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M6 12H18M18 12L13 7M18 12L13 17"
+                        stroke="#ffff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="featured-img">
+              <img class="photo" src="src/img/banner-2.png" alt="photo" />
+              <div class="featured-text">
+                <h4 class="featured-heading">
+                  Make your Breakfast <br />
+                  Healthy and Easy
+                </h4>
+                <a href="shop-grid-right.html" class="featured-btn"
+                  ><span>Shop Now</span>
+                  <svg
+                    class="featured-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M6 12H18M18 12L13 7M18 12L13 17"
+                        stroke="#ffff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+            <div class="featured-img">
+              <img class="photo" src="src/img/banner-3.png" alt="photo" />
+              <div class="featured-text">
+                <h4 class="featured-heading">
+                  The best Organic <br />
+                  Products Online
+                </h4>
+                <a href="shop-grid-right.html" class="featured-btn"
+                  ><span>Shop Now</span>
+                  <svg
+                    class="featured-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M6 12H18M18 12L13 7M18 12L13 17"
+                        stroke="#ffff"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      ></path>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- Products -->
     <section id="products">
-        <div class="products-container">
-            <div class="products-top">
-                <h3 class="text-heading">Popular Products</h3>
-                <ul class="products-nav-link">
-                    <li class="products-nav-item">
-                        <button class="btn-link" type="button">All</button>
-                    </li>
-                    <li class="products-nav-item">
-                        <button class="btn-link" type="button">Dairies</button>
-                    </li>
-                    <li class="products-nav-item">
-                        <button class="btn-link" type="button">Coffes Teas</button>
-                    </li>
-                    <li class="products-nav-item">
-                        <button class="btn-link" type="button">Pet Foods</button>
-                    </li>
-                    <li class="products-nav-item">
-                        <button class="btn-link" type="button">Meats</button>
-                    </li>
-                    <li class="products-nav-item">
-                        <button class="btn-link" type="button">Vegetables</button>
-                    </li>
-                    <li class="products-nav-item">
-                        <button class="btn-link" type="button">Fruits</button>
-                    </li>
-                </ul>
-            </div>
-            <div id="product-cards"></div>
+      <div class="products-container">
+        <div class="products-top">
+          <h3 class="text-heading">Popular Products</h3>
+          <ul class="products-nav-link">
+            <li class="products-nav-item">
+              <button class="btn-link" type="button">All</button>
+            </li>
+            <li class="products-nav-item">
+              <button class="btn-link" type="button">Dairies</button>
+            </li>
+            <li class="products-nav-item">
+              <button class="btn-link" type="button">Coffes Teas</button>
+            </li>
+            <li class="products-nav-item">
+              <button class="btn-link" type="button">Pet Foods</button>
+            </li>
+            <li class="products-nav-item">
+              <button class="btn-link" type="button">Meats</button>
+            </li>
+            <li class="products-nav-item">
+              <button class="btn-link" type="button">Vegetables</button>
+            </li>
+            <li class="products-nav-item">
+              <button class="btn-link" type="button">Fruits</button>
+            </li>
+          </ul>
         </div>
-
+        <div id="product-cards"></div>
+      </div>
     </section>
     <script src="src/js/main.js"></script>
-</body>
-
+  </body>
 </html>
